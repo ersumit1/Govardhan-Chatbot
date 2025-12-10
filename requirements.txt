@@ -5,3 +5,5 @@ langchain
 chromadb
 langchain-google-genai
 python-dotenv
+langchain-chroma
+chromadb
