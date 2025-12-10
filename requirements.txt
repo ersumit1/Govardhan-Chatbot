@@ -1,0 +1,6 @@
+Flask
+gunicorn
+langchain
+chromadb
+langchain-google-genai
+python-dotenv
