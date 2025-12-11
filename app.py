@@ -22,7 +22,7 @@ embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
 vectorstore = Chroma.from_documents(docs, embedding=embeddings)
 retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
 
-llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0.2)
+llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.2)
 
 @app.route("/chat", methods=["POST"])
 def chat():
